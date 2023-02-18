@@ -1,7 +1,75 @@
 *{
     margin: 0;
     padding: 0%;
+    box-sizing: border-box;
 }
+
+/*Top Button*/
+.go-top-container{
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+
+.go-top-button{
+    width: 0rem;
+    height: 0rem;
+    background: #4fd4fc;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+    z-index: -1;
+}
+
+.go-top-button i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 5.5rem;
+    height: 5.5rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#puntero{
+    left: 2.1rem;
+}
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+}
+
+/*Top Button end*/
 
 .selector-for-some-widget {
     box-sizing: content-box;
@@ -87,7 +155,7 @@ header{
 }
 
 .titulo-centrado{
-    font-size: 50px;
+    font-size: 2.3em;
 }
 
 .head{
@@ -104,9 +172,101 @@ header{
     scroll-behavior: smooth;
 }
 
+html, body {
+    min-height: 100%;
+}
+
 body{
-    background-color: rgb(255, 255, 255);
     font-family: 'Poppins', regular;
+    background-color: rgb(255, 255, 255);
+}
+
+img{
+width: auto;
+}
+
+h2{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    font-family: 'Poppins', regular;
+    text-align: center;
+    background-color: #eefafd;
+    margin: auto;
+    width: 70%;
+    max-width: 400%;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px -5px;
+}
+
+.form__title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form_paragraph{
+    font-weight: 300;
+    color: black;
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grip;
+    gap: 2.5em;
+}
+
+.form__group{
+    padding-top: 9px;
+    position: relative;
+    --color: #5757577e;
+}
+
+.form__input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form__input:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label{
+    transform: translateY(-12PX) scale(.7);
+    transform-origin: left-top;
+    color: #38aef2;
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form__submit{
+    font-family: 'Poppins', regular;
+    background-color:#4fd4fc;
+    color: azure;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border-radius: .5em;
+    width: 60%;
+    margin-top: 20px;
+}
+
+#envio{
+    opacity: 0;
 }
 
 footer{
@@ -130,13 +290,13 @@ i{
 
 #logoabajo{
     height: 160px;
-    margin: 10px;
     padding: 10px;
 }
 
 #nombremarca{
     text-decoration: none;
     color: white;
+    margin-right:auto
 }
 
 @media (max-width: 700px){
@@ -161,4 +321,47 @@ i{
     .nav__input:checked + .nav__menu{
         clip-path: circle(100% at center);
     }
+}
+
+@media screen and (max-width: 790px){
+#logoabajo{
+    height: 140px;
+}
+.imagenes__servicios{
+    height: 400px
+}
+}
+
+@media screen and (max-width: 448px){
+    .imagenes__servicios{
+        height: 200px;
+        position: relative;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: 0;
+    }
+    #nombremarca{
+        margin-right:auto
+    }
+
+    .titulo-centrado{
+        font-size: 1.9em;
+    }
+    .subtitulo-principal{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 411px){
+    .titulo-centrado{
+        font-size: 1.4em;
+    }
+    .subtitulo-principal{
+        font-size: 20px;
+    }
+
 }
