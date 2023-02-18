@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="img/dd.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,100;1,400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8f0f82e05a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8f0f82e05a.js" crossorigin="anonymous"></script>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Ruben Davis</title>
 </head>
@@ -35,37 +37,59 @@
     </nav>
         <header id="inicio">
         <div class="head">
-            <h2 class="titulo-centrado">Ruben Davis {DevDavis}</h2>
+            <h1 class="titulo-centrado">Ruben Davis {DevDavis}</h1>
             <p class="subtitulo-principal">Desarrollador Full Stack</p>
         </div>
     </header>
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up" id="puntero"></i>
+        </div>
+    </div>
     <main>
         <section class="contenedor">
-            <a name="sobremi">¿Que lenguajes manejo?</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consectetur architecto, sunt officiis corporis eveniet optio repudiandae beatae, impedit, labore esse eos? Officiis dolorem aut ipsum ullam itaque eaque maxime.</p>
-            <div class="imagenes-lenguaje">
-                <img src="img/HTML_Outline.svg" alt="">
-                <img src="img/Java_Outline.svg" alt="">
-                <img src="img/CSS_Outline.svg" alt="">
-                <img src="img/Python_Outline.svg" alt="">
-                <img src="img/Data Arranging_Outline.svg" alt="">
-                <img src="img/Data Arranging_Flatline.svg" alt="">
+            <a name="sobremi"><h2>¿Que lenguajes manejo?</h2></a>
+            <p>Como desarrollador Full-Stack manejo los lenguajes de etiqueta y de programación básicos como HTMLS, CSS y JavaScript; sin embargo tambien otros como Pythom PHP, C, C++ y Java.</p>
+            <div class="imagenes__lenguaje">
+
             </div>
         </section>
         <section class="service">
-            <a name="servicio">¿Que servicios puedo ofrecer?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consectetur architecto, sunt officiis corporis eveniet optio repudiandae beatae, impedit, labore esse eos? Officiis dolorem aut ipsum ullam itaque eaque maxime.</p>
-            <div class="contenedorcodigo">
-                <img src="img/Codigo.svg" alt="">
-                <img src="img/Web Developer_Flatline.svg" alt="">
-            </div>  
+            <a name="servicio"><h2>¿Que servicios puedo ofrecer?</h2></a>
+            <p>Como desarrolladore Full-Stack, puedo dirigir como tambien formar parte de un equipo de desarrollo centrado tanto en el Front-end como en el Back-end, me considero muy bueno integrandome en grupos ya formados como recien creados</p> 
+            <div class="contenedor__servicio">
+                <img src="img/HTML_Monochromatic.png" class="imagenes__servicios" alt="">
+                <img src="img/Coding _Outline.png" class="imagenes__servicios" alt="">
+            </div> 
         </section>
         <section class="contact">
-            <a name="contacto">¿Como contactarme?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consectetur architecto, sunt officiis corporis eveniet optio repudiandae beatae, impedit, labore esse eos? Officiis dolorem aut ipsum ullam itaque eaque maxime.</p>
+            <a name="contacto"><h2>¿Como contactarme?</h2></a>
+            <p>Puede contactar conmigo a travez de mis redes sociales o con un correo directo hacia mi cuenta laboral debajo de esta sección.</p>
             <div>
-                <img src="img/Sending emails_Outline.svg" alt="">
+
             </div>
+            <form id="form" action="" class="form">
+                <h2 class="form__title">Comuniquese conmigo, su consulta no es molestia</h2>
+                <div class="form__container">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nombre:</label>
+                        <input type="text" required id="name" class="form__input" placeholder=" ">
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="name" class="form__label">Correo electrónico:</label>
+                        <input type="email" required id="email" class="form__input" placeholder=" ">
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Mensaje:</label>
+                        <textarea for="message" name="message" class="form__input" placeholder=" "></textarea>
+                        <span class="form__line"></span>
+                    </div>
+                    <input type="submit" class="form__submit" value="Enviar" id="submit">
+                </div>
+            </form>
+            <a href="mailto:soriaguillermodavid@gmail.com" id="envio">mail</a>
         </section>
     </main>
     <footer class="bg-dark text-white py-4">
@@ -99,5 +123,6 @@
         </nav>
     </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
