@@ -498,6 +498,13 @@ i{
         padding: 15px;
         padding-right: 10px;
     }
+        #logoabajo{
+        height: 120px;
+        padding: 10px;
+    }
+    #socialmedia{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 520px){
