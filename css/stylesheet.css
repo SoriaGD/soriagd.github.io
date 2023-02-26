@@ -211,6 +211,7 @@ width: auto;
 .imagen__me{
     height: 260px;
     padding-right: 90px;
+    margin: 15px 0px 10px 0px;
 }
 .imagen__aboutme{
     height: 200px;
@@ -219,6 +220,7 @@ width: auto;
 .imagen__service1{
     height: 170px;
     padding: 10px 25px 20px 0;
+    margin: 5px 0px 5px 0;
 }
 .imagen__service2{
     height: 170px;
@@ -237,8 +239,8 @@ p{
     font-family: 'Poppins', regular;
 }
 .text__aboutme, .text__service, .text__contact{
-    width: 40%;
-    padding: 15px;
+    width: 50%;
+    padding: 25px;
     padding-right: 10px;
 }
 .form{
@@ -363,7 +365,7 @@ i{
     position: relative;
 }
 .imagen__me{
-    height: 260px;
+    height: 230px;
     padding-right: 40px;
 }
 .imagen__aboutme{
@@ -380,7 +382,7 @@ i{
 }
 .imagen__contact{
     height: 160px;
-        padding-right: 0px;
+    padding-right: 10%;
 }
 .subtitulo{
     color: azure;
